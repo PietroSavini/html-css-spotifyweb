@@ -6,7 +6,8 @@
 
 /* xs <=600px --------------------------------------------------------------------*/
 @media screen and (max-width:600px){
-    /* Player responsivness */
+
+    /* Player bar-----------------------------------------*/
     .player i{
         font-size: 0.7rem;
     }
@@ -41,11 +42,20 @@
         margin-right: 0;
         min-width: 50px;
     }
+
 }
 
+@media screen and (max-width:700px){
+    /* sidebar  */
+    .sidebar{
+        display: none;
+    }
+}
 /* s <=700px --------------------------------------------------------------------- */
 @media screen and (min-width:700px){
-
+    .sidebar-small{
+        display: none;;
+    }
 }
 
 /* md <=1200px -------------------------------------------------------------------- */
