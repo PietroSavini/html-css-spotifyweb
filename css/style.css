@@ -11,13 +11,193 @@ img{
 
 /* common */
 body{
-
+    font-family: 'Montserrat', sans-serif ;
 }
 
+:root{
+    /* colors */
+    --main-bg:#141922;
+    --player-bg:#282828;
+    --grey-primary:#5C5C5C;
+
+    /* debug */
+    --border:1px solid #fff;
+}
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 ul li{
     list-style-type: none;
 }
+/* flex utilities */
+.fx{
+    display: flex;
+}
+
+/* wrapper */
+
+.wrapper{
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-bg);
+}
+
+/* tipography */
+
+.track-playing .title{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.track-playing .subtitle{
+    font-size: 0.6rem;
+}
+
+/* player bar ------------------------------------------------------------------*/
+.player{
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    background-color: var(--player-bg) ;
+    
+}
+
+/* middle bar with buttons */
+.col-md{
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    min-width: 200px;
+}
+
+.col-md:first-child{
+    height: 55px;
+    width: 100%;
+}
+
+.col-md ul{
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md ul li{
+    line-height: 55px;
+    display: inline-block;
+    height: 100%;
+    font-size: 1rem;
+    margin: 0 0.8rem;
+}
+
+#play{
+    font-size: 1.5rem;
+}
+
+.player-bar{
+    height: 45px;
+    min-width: 180px;
+    width: 90%;
+    line-height: 45px;
+}
+
+/* progress bar  */
+.player-bar span{
+    margin: 0 1rem;
+}
+
+.progress-bar{
+    cursor: pointer;
+    position: relative;
+    margin:auto 0;
+    display: inline-block;
+    min-width: 50px;
+    width: 100%;
+    height: 5px;
+    background-color: var(--grey-primary) ;
+    border-radius: 5px;
+    
+}
+
+.actual-prg{
+    position: absolute;
+    display: inline-block;
+    height: 5px;
+    width: 25%;
+    border-radius: 5px;
+    background-color: #C1C1C1;
+    transition: 0.2s;
+}
+/*  on hover player's bars effects */
+.thumb{
+    position: absolute;
+    right: -10px;
+    top:calc(2.5px - 10px);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.progress-bar:hover .active{ 
+    background-color: #C0FF31;
+}
+/* lateral columns */
+.col-lt{
+    min-width: 190px;
+    width:  30%;
+    height: 100%;
+    padding: 1rem 0;
+}
+
+.col-lt i{
+    font-size: 1.3rem;
+    margin: 0.4rem;
+}
+
+/* player col sx */
+.track-playing{
+    height: 100%;
+    width: 100%;
+}
+
+.track-playing img{
+    margin-left: 1rem;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.track-playing div:first-of-type{
+    align-self: center;
+    margin-right: .5rem;
+    min-width: 70px;
+}
+
+.track-playing .icons{
+    align-self: center;
+}
+
+.icons i{
+    margin-right: 0.1rem;
+    
+}
+
+/* right col */
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.volume-bar{
+    width: 40%;
+    margin: auto 0.7rem;
+}
+

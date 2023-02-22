@@ -8,8 +8,76 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- wrapper for webb app -->
+    <div class="wrapper fx">
+        <!-- player bar -->
+        <div class="player fx">
+            <!-- left col -->
+            <div class="col-lt">
+                <div class="track-playing fx">
+                    <img src="img/sinister.jpeg" alt="">
+                    <div>
+                        <p class="title">Sinister</p>
+                        <p class="subtitle">Nome Brano</p>
+                    </div>
+
+                    <div class="icons">
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-regular fa-folder"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /left col -->
+
+            <!-- middle col-player -->
+            <div class="col-md fx">
+                <div>
+                    <ul class="fx">
+                        <li><a href=""><i class="fa-solid fa-shuffle"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-backward-step"></i></a></li>
+                        <li id="play"><a href=""><i class="fa-regular fa-circle-play"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-forward-step"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-rotate-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="player-bar fx">
+                    <span>0:25</span>
+                    <div class="progress-bar">
+                        <div class="actual-prg active">
+                            <div class="thumb active"></div>
+                        </div>
+                    </div>
+                    <span>4:35</span>      
+                </div>
+            </div>
+            <!-- /middle col-player -->
+
+            <!-- right col -->
+            <div class="col-lt right">
+                <div class="icons fx">
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""><i class="fa-sharp fa-solid fa-desktop"></i></a>
+                    <a href=""><i class="fa-solid fa-volume-high"></i></a>
+
+                </div>
+                <div class="volume-bar fx">
+                    <div class="progress-bar">
+                        <div class="actual-prg active">
+                            <div class="thumb active"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <main>
+
+        </main>
+    </div>
 </body>
 </html>

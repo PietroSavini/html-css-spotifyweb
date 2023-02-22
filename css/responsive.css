@@ -5,8 +5,42 @@
 
 
 /* xs <=600px --------------------------------------------------------------------*/
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
+    /* Player responsivness */
+    .player i{
+        font-size: 0.7rem;
+    }
 
+    .col-md ul li{
+        margin: 0 .5rem;
+    }
+
+    #play{
+        font-size: 1rem;
+    }
+
+    .col-md{
+        min-width: 150px;
+    }
+
+    .col-lt{
+        font-size: 0.7rem;
+        min-width: 150px;
+    }
+
+    .player-bar{
+        min-width: 140px;
+    }
+
+    .player-bar span{
+        margin: 0 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .track-playing div:first-of-type{
+        margin-right: 0;
+        min-width: 50px;
+    }
 }
 
 /* s <=700px --------------------------------------------------------------------- */
@@ -16,5 +50,5 @@
 
 /* md <=1200px -------------------------------------------------------------------- */
 @media screen and (min-width:1200px){
-    
+
 }
