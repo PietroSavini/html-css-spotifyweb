@@ -57,6 +57,13 @@
     .card-col{
         width: calc(100% / 2 - 1rem);
     }
+
+    /* typography */
+    .main-nav ul li{
+        font-size: .6rem;
+        margin: 0 .3rem;
+    }
+
 }
 
 @media screen and (max-width:700px){
@@ -65,13 +72,23 @@
         display: none;
     }
 
+    /* main page layout */
+    .card-col{
+        width: calc(100% / 4 - 1rem);
+    }
+
+
     /* typography */
     .main-nav ul li{
         font-size: .5rem;
     }
 
     main .title{
-        font-size: .7rem;
+        font-size: .5rem;
+    }
+
+    main .subtitle{
+        font-size: .5rem;
     }
 }
 /* s <=700px --------------------------------------------------------------------- */
@@ -83,8 +100,6 @@
     /* main page layout */
     .card-col{
         width: calc(100% / 4 - 1rem);
-        text-align: center;
-        cursor: pointer;
     }
 
     /* typography */
@@ -93,6 +108,10 @@
     }
 
     main .title{
+        font-size: .7rem;
+    }
+
+    main .subtitle{
         font-size: .7rem;
     }
 }
