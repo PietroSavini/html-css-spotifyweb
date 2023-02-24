@@ -48,6 +48,12 @@ ul li{
     background-color: var(--main-bg);
 }
 
+/* sections */
+section{
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
 /* tipography */
 .title{
     font-weight: bold;
@@ -239,6 +245,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     color: #808080;
+    z-index: 1;
 }
 
 a.a-active i{
@@ -314,7 +321,7 @@ a.a-active i{
     background-color: black;
     padding: 1rem 1rem 0 0rem;
     color: var(--grey-subtitle);
-
+    z-index: 1;
 }
 
 .sidebar-main img{
@@ -402,4 +409,123 @@ li.selected{
 .sidebar .user-section p{
     display: inline-block;
     vertical-align: middle;
+}
+
+/* hover effects on components of the main sidebar */
+
+.sidebar a:hover {
+    color: #fff;
+}
+
+.sidebar .new-playlist:hover div:first-of-type{
+    background-color: #fff;
+}
+
+/* main-content-------------------------------------------------------------------- */
+.main-content{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    border: var(--border);
+}
+
+/* fixed cta  */
+.cta{
+    width: 100%;
+    height:100px;
+    position: fixed;
+    text-align: right;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0,.3);
+    padding: 0 1rem;
+    line-height: 100px;
+}
+
+.cta-btn span{
+    display: inline-block;
+    border: 1px solid #fff;
+    line-height: 50px;
+    height: 50px ;
+    margin-bottom: 0px;
+    margin-right: 3%;
+    padding: 0 2rem;;
+    border-radius: 25px;
+    transition: .1s;
+}
+
+/* cta-btn hover efgfect */
+.cta-btn:hover span{
+    transform: scale(1.3);
+}
+
+.main-nav{
+    width: 100%;
+    padding-top: calc(1rem + 100px);
+    justify-content: center;
+}
+
+.main-nav-underline{
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-green);
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.main-nav ul li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.main-nav ul li p{
+    margin-bottom: .5rem;
+    color: var(--grey-subtitle);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.active-underline{
+    opacity:1
+}
+
+/* main sections--------------------------------------------------------------------*/
+/*"recently played */
+.card-wrapper{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-col{
+    width: calc(100% / 6 - 1rem);
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-img{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* card-hover effect */
+
+.hover-effect{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0,.4);
+    justify-content: center;
+}
+
+.hover-effect i{
+    color: #fff;
+    align-self: center;
+    font-size: 5rem;
+}
+
+.card-col:hover .card-img .hover-effect{
+    z-index: 0;
 }
