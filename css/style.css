@@ -494,6 +494,10 @@ li.selected{
     opacity:1
 }
 
+.main-nav li:hover a>p{
+    color: #fff;
+}
+
 /* main sections--------------------------------------------------------------------*/
 /*"albums styling */
 .card-wrapper{
