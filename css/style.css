@@ -26,6 +26,10 @@ body{
     --border:1px solid #fff;
 }
 
+.mb-1 {
+    margin-bottom: 2rem;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -490,7 +494,7 @@ li.selected{
 }
 
 /* main sections--------------------------------------------------------------------*/
-/*"recently played */
+/*"albums styling */
 .card-wrapper{
     width: 100%;
     flex-wrap: wrap;
@@ -528,4 +532,14 @@ li.selected{
 
 .card-col:hover .card-img .hover-effect{
     z-index: 0;
+}
+
+/* artist cards */
+
+.artist img{
+    border-radius: 50%;
+}
+
+.artist .hover-effect{
+    border-radius: 50%;
 }
