@@ -326,6 +326,7 @@ a.a-active i{
     padding: 1rem 1rem 0 0rem;
     color: var(--grey-subtitle);
     z-index: 1;
+    font-size: 10px;
 }
 
 .sidebar-main img{
